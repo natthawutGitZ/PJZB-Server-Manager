@@ -32,6 +32,7 @@
 | 👥 Players | RCON, access levels, kick, ban, and broadcast | RCON, ตั้งสิทธิ์, Kick, Ban และ Broadcast |
 | 💾 Backups | Create, restore, and safely delete backups | สร้าง กู้คืน และลบ Backup อย่างปลอดภัย |
 | 🧑‍💻 Dev Workspace | Create, edit, validate, move, back up, and delete server Lua files | สร้าง แก้ ตรวจ ย้าย สำรอง และลบไฟล์ Lua ใน Server |
+| 🔔 System Tray | Keep the Launcher available after closing or minimizing | ซ่อน Launcher ไว้ที่มุมขวาล่างเมื่อปิดหรือย่อหน้าต่าง |
 
 ## Setup modes / รูปแบบการติดตั้ง
 
@@ -188,6 +189,8 @@ A safety backup of current data is created before restore.
 Configure auto-update interval, initial delay, player warnings, and retry cooldown. Updates are blocked while players are connected; use **UPDATE WHILE STOPPED** after Save & Stop.
 
 The top-right gear opens Launcher Settings for Server root, Shared/Gaming or Dedicated mode, Java RAM, priority, startup options, Launcher updates, and copying the generated Admin password. A Launcher update does not stop a running Java server.
+
+The **System tray** settings control whether Close or Minimize hides the Launcher in the Windows notification area, whether it starts hidden, and whether a tray notification is shown. Double-click the PZ icon to restore the window. Right-click it for Open, Start Server, Save & Stop, Restart, and Exit Launcher. **Exit Launcher** closes only the manager; it does not stop the Java server.
 
 ## Troubleshooting
 
@@ -359,6 +362,8 @@ Dashboard แสดง **OFFLINE**, **STARTING**, **ONLINE**, **STOPPING** ห�
 ตั้ง Auto Update interval, initial delay, player warning และ retry cooldown ได้ ระบบจะไม่อัปเดตขณะมีผู้เล่น ใช้ **UPDATE WHILE STOPPED** หลัง Save & Stop
 
 ไอคอนเฟืองมุมขวาบนใช้เปลี่ยน Server root, โหมด Shared/Gaming หรือ Dedicated, Java RAM, priority, Auto Start, อัปเดต Launcher และคัดลอก Admin password การอัปเดต Launcher จะไม่ปิด Java Server ที่กำลังทำงาน
+
+ส่วน **System tray** ตั้งได้ว่าปุ่มกากบาทหรือปุ่มย่อจะซ่อน Launcher ไปยัง Notification area หรือไม่, ให้เปิดแบบซ่อนตั้งแต่เริ่ม และให้แสดงการแจ้งเตือนหรือไม่ ดับเบิลคลิกไอคอน PZ เพื่อเปิดหน้าต่าง หรือคลิกขวาเพื่อ Open, Start Server, Save & Stop, Restart และ Exit Launcher การเลือก **Exit Launcher** จะปิดเฉพาะโปรแกรมจัดการ ไม่ปิด Java Server
 
 ## แก้ปัญหา
 
