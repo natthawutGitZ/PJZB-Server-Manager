@@ -1,6 +1,6 @@
 <div align="center">
 
-# PJZB Server Manager
+![PJZB Server Manager](assets/pjzb-banner.svg)
 
 ### One launcher. Complete Project Zomboid server control.
 ### Launcher เดียว จัดการเซิร์ฟเวอร์ Project Zomboid ได้ครบทุกอย่าง
