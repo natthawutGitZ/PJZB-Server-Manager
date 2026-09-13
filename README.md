@@ -31,6 +31,7 @@
 | 🧩 Mods | Manage load order, dependencies, IDs, and updates | จัดการลำดับ Dependency, ID และอัปเดต |
 | 👥 Players | RCON, access levels, kick, ban, and broadcast | RCON, ตั้งสิทธิ์, Kick, Ban และ Broadcast |
 | 💾 Backups | Create, restore, and safely delete backups | สร้าง กู้คืน และลบ Backup อย่างปลอดภัย |
+| 🧑‍💻 Dev Workspace | Create, edit, validate, move, back up, and delete server Lua files | สร้าง แก้ ตรวจ ย้าย สำรอง และลบไฟล์ Lua ใน Server |
 
 ## Setup modes / รูปแบบการติดตั้ง
 
@@ -58,9 +59,10 @@
 7. [Configuration and Sandbox](#configuration-and-sandbox)
 8. [Mods and Workshop](#mods-and-workshop)
 9. [Players and RCON](#players-and-rcon)
-10. [Backups](#backups)
-11. [Updates and Launcher Settings](#updates-and-launcher-settings)
-12. [Troubleshooting](#troubleshooting)
+10. [Dev Workspace](#dev-workspace)
+11. [Backups](#backups)
+12. [Updates and Launcher Settings](#updates-and-launcher-settings)
+13. [Troubleshooting](#troubleshooting)
 
 ## Requirements
 
@@ -149,7 +151,7 @@ Players use the assigned address and disable **Use Steam Relay**. They do not in
 - **RESTART** — save, stop, and start again.
 - **CHECK UPDATES** — check server and Workshop updates.
 
-The Dashboard reports **OFFLINE**, **STARTING**, **ONLINE**, **STOPPING**, or **UPDATING**, plus players, CPU, Java RAM, IP/Port, and color-coded live logs.
+The Dashboard reports **OFFLINE**, **STARTING**, **ONLINE**, **STOPPING**, or **UPDATING**, plus players, CPU, Java RAM, IP/Port, and color-coded live logs. Enable **Follow latest** to stay on the newest line, or choose ALL, ERROR, WARNING, SUCCESS, NETWORK, LUA, INFO, or DEBUG to show only that category.
 
 ## Configuration and Sandbox
 
@@ -166,6 +168,12 @@ The Mods page controls enabled items, load order, dependencies, Mod/Workshop IDs
 ## Players and RCON
 
 When the header reports **RCON ready**, you can refresh online players, change access level, kick/ban/unban, and broadcast messages. If players are online but the list is empty, verify RCON ready and press Refresh.
+
+## Dev Workspace
+
+The **Dev** tab scans Lua files inside the configured Server root and provides a built-in editor. It can search, create, edit, check, reload, rename/move, and send Lua files to the Recycle Bin. Every overwrite creates a timestamped recovery copy under `backups\dev-lua` and saving is blocked if another program changed the file after it was loaded.
+
+The CHECK button detects encoding/null characters, merge-conflict markers, unclosed strings/comments, and mismatched brackets. It is a structural safety check, not a replacement for the Project Zomboid Lua runtime. Server/shared Lua changes normally require a server restart.
 
 ## Backups
 
@@ -222,9 +230,10 @@ Close duplicate `PJZB Server Manager.exe` processes in Task Manager and launch t
 7. [ตั้งค่า Configuration และ Sandbox](#ตั้งค่า-configuration-และ-sandbox)
 8. [จัดการ Mods และ Workshop](#จัดการ-mods-และ-workshop)
 9. [ผู้เล่นและ RCON](#ผู้เล่นและ-rcon)
-10. [Backup และ Restore](#backup-และ-restore)
-11. [Updates และ Launcher Settings](#updates-และ-launcher-settings-1)
-12. [แก้ปัญหา](#แก้ปัญหา)
+10. [Dev Workspace](#dev-workspace-1)
+11. [Backup และ Restore](#backup-และ-restore)
+12. [Updates และ Launcher Settings](#updates-และ-launcher-settings-1)
+13. [แก้ปัญหา](#แก้ปัญหา)
 
 ## สิ่งที่ต้องมี
 
@@ -313,7 +322,7 @@ Launcher ดาวน์โหลด/เปิด Agent และ Claim URL ใ�
 - **RESTART** — บันทึก ปิด และเปิดใหม่
 - **CHECK UPDATES** — ตรวจ Server/Workshop updates
 
-Dashboard แสดง **OFFLINE**, **STARTING**, **ONLINE**, **STOPPING** หรือ **UPDATING** พร้อมผู้เล่น CPU, Java RAM, IP/Port และ Live Log แยกสี
+Dashboard แสดง **OFFLINE**, **STARTING**, **ONLINE**, **STOPPING** หรือ **UPDATING** พร้อมผู้เล่น CPU, Java RAM, IP/Port และ Live Log แยกสี เปิด **Follow latest** เพื่อตามบรรทัดล่าสุด หรือเลือก ALL, ERROR, WARNING, SUCCESS, NETWORK, LUA, INFO และ DEBUG เพื่อแสดงเฉพาะประเภทนั้น
 
 ## ตั้งค่า Configuration และ Sandbox
 
@@ -330,6 +339,12 @@ Dashboard แสดง **OFFLINE**, **STARTING**, **ONLINE**, **STOPPING** ห�
 ## ผู้เล่นและ RCON
 
 เมื่อขึ้น **RCON ready** สามารถ Refresh ผู้เล่น เปลี่ยน Access Level, Kick, Ban, Unban และ Broadcast หากรายชื่อว่างทั้งที่มีผู้เล่น ให้ตรวจ RCON แล้วกด Refresh
+
+## Dev Workspace
+
+แท็บ **Dev** ค้นหาไฟล์ Lua ภายใน Server root และมี Editor ในตัว สามารถค้นหา สร้าง แก้ไข ตรวจ Reload เปลี่ยนชื่อ/ย้าย และส่งไฟล์ไป Recycle Bin ได้ ทุกครั้งที่เขียนทับ ระบบจะสร้าง Recovery copy แบบมีเวลาไว้ใน `backups\dev-lua` และจะไม่ยอม Save หากไฟล์ถูกโปรแกรมอื่นแก้หลังจากเปิดเข้ามา
+
+ปุ่ม CHECK ตรวจ NUL/Encoding, Merge conflict, String/Comment ที่ปิดไม่ครบ และวงเล็บไม่ตรงกัน เป็นการตรวจโครงสร้างเบื้องต้นเท่านั้น การเปลี่ยน Server/Shared Lua ตามปกติต้อง Restart Server
 
 ## Backup และ Restore
 
