@@ -5,15 +5,15 @@
 ### One launcher. Complete Project Zomboid server control.
 ### Launcher เดียว จัดการเซิร์ฟเวอร์ Project Zomboid ได้ครบทุกอย่าง
 
-[![Latest Release](https://img.shields.io/github/v/release/natthawutGitZ/PJZB-Server-Manager?style=for-the-badge&color=7c3aed)](https://github.com/natthawutGitZ/PJZB-Server-Manager/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/natthawutGitZ/PJZB-Server-Manager/total?style=for-the-badge&color=16a34a)](https://github.com/natthawutGitZ/PJZB-Server-Manager/releases)
+[![Latest Release](https://img.shields.io/github/v/release/CommunityDevGitZ/PJZB-Server-Manager?style=for-the-badge&color=7c3aed)](https://github.com/CommunityDevGitZ/PJZB-Server-Manager/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/CommunityDevGitZ/PJZB-Server-Manager/total?style=for-the-badge&color=16a34a)](https://github.com/CommunityDevGitZ/PJZB-Server-Manager/releases)
 ![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0284c7?style=for-the-badge&logo=windows)
 ![Project Zomboid](https://img.shields.io/badge/Project%20Zomboid-Build%2042-dc2626?style=for-the-badge)
 
 **Self-contained Windows application — no .NET installation required**  
 **โปรแกรม Windows แบบพร้อมใช้ — ไม่ต้องติดตั้ง .NET เพิ่ม**
 
-[⬇️ Download Latest](https://github.com/natthawutGitZ/PJZB-Server-Manager/releases/latest) · [🇬🇧 English Manual](#english-manual) · [🇹🇭 คู่มือภาษาไทย](#คู่มือภาษาไทย) · [🐞 Report an Issue](https://github.com/natthawutGitZ/PJZB-Server-Manager/issues)
+[⬇️ Download Latest](https://github.com/CommunityDevGitZ/PJZB-Server-Manager/releases/latest) · [🇬🇧 English Manual](#english-manual) · [🇹🇭 คู่มือภาษาไทย](#คู่มือภาษาไทย) · [🐞 Report an Issue](https://github.com/CommunityDevGitZ/PJZB-Server-Manager/issues)
 
 </div>
 
@@ -76,7 +76,7 @@ PJZB Server Manager is self-contained. No separate .NET runtime is required.
 
 ## Download and launch
 
-1. Open [Latest Release](https://github.com/natthawutGitZ/PJZB-Server-Manager/releases/latest).
+1. Open [Latest Release](https://github.com/CommunityDevGitZ/PJZB-Server-Manager/releases/latest).
 2. Download `PJZB.Server.Manager.exe`.
 3. Put it in a dedicated folder such as `C:\PJZB` or `D:\Servers\PJZB`.
 4. Run it. If SmartScreen appears, verify the source and choose **More info → Run anyway**.
@@ -152,7 +152,7 @@ Players use the assigned address and disable **Use Steam Relay**. They do not in
 - **RESTART** — save, stop, and start again.
 - **CHECK UPDATES** — check server and Workshop updates.
 
-The Dashboard reports **OFFLINE**, **STARTING**, **ONLINE**, **STOPPING**, or **UPDATING**, plus players, CPU, Java RAM, IP/Port, and color-coded live logs. Enable **Follow latest** to stay on the newest line, or choose ALL, ERROR, WARNING, SUCCESS, NETWORK, LUA, INFO, or DEBUG to show only that category.
+The Dashboard reports **OFFLINE**, **STARTING**, **ONLINE**, **STOPPING**, or **UPDATING**, plus players, CPU, Java RAM, IP/Port, and color-coded live logs. Search the current log text, enable **Follow latest** to stay on the newest line, or choose ALL, ERROR, WARNING, SUCCESS, NETWORK, LUA, INFO, or DEBUG to show only that category.
 
 ## Configuration and Sandbox
 
@@ -172,7 +172,7 @@ When the header reports **RCON ready**, you can refresh online players, change a
 
 ## Dev Workspace
 
-The **Dev** tab scans Lua files inside the configured Server root and provides a built-in editor. It can search, create, edit, check, reload, rename/move, and send Lua files to the Recycle Bin. Every overwrite creates a timestamped recovery copy under `backups\dev-lua` and saving is blocked if another program changed the file after it was loaded.
+The **Dev Workspace** tab scans editable Lua sources under Server configuration, custom mods, the server installation, and Workshop content. Runtime world data under `data\Saves` is deliberately excluded. It can search, create, edit files up to 128 MB, check, reload, rename/move, and send Lua files to the Recycle Bin. Every overwrite creates a timestamped recovery copy under `backups\dev-lua` and saving is blocked if another program changed the file after it was loaded.
 
 The CHECK button detects encoding/null characters, merge-conflict markers, unclosed strings/comments, and mismatched brackets. It is a structural safety check, not a replacement for the Project Zomboid Lua runtime. Server/shared Lua changes normally require a server restart.
 
@@ -249,7 +249,7 @@ Close duplicate `PJZB Server Manager.exe` processes in Task Manager and launch t
 
 ## ดาวน์โหลดและเปิดใช้งาน
 
-1. เปิดหน้า [ดาวน์โหลดรุ่นล่าสุด](https://github.com/natthawutGitZ/PJZB-Server-Manager/releases/latest)
+1. เปิดหน้า [ดาวน์โหลดรุ่นล่าสุด](https://github.com/CommunityDevGitZ/PJZB-Server-Manager/releases/latest)
 2. ดาวน์โหลด `PJZB.Server.Manager.exe`
 3. วางในโฟลเดอร์เฉพาะ เช่น `C:\PJZB` หรือ `D:\Servers\PJZB`
 4. เปิดโปรแกรม หาก SmartScreen เตือน ให้ตรวจที่มาแล้วเลือก **More info → Run anyway**
@@ -325,7 +325,7 @@ Launcher ดาวน์โหลด/เปิด Agent และ Claim URL ใ�
 - **RESTART** — บันทึก ปิด และเปิดใหม่
 - **CHECK UPDATES** — ตรวจ Server/Workshop updates
 
-Dashboard แสดง **OFFLINE**, **STARTING**, **ONLINE**, **STOPPING** หรือ **UPDATING** พร้อมผู้เล่น CPU, Java RAM, IP/Port และ Live Log แยกสี เปิด **Follow latest** เพื่อตามบรรทัดล่าสุด หรือเลือก ALL, ERROR, WARNING, SUCCESS, NETWORK, LUA, INFO และ DEBUG เพื่อแสดงเฉพาะประเภทนั้น
+Dashboard แสดง **OFFLINE**, **STARTING**, **ONLINE**, **STOPPING** หรือ **UPDATING** พร้อมผู้เล่น CPU, Java RAM, IP/Port และ Live Log แยกสี สามารถค้นหาข้อความ เปิด **Follow latest** เพื่อตามบรรทัดล่าสุด หรือเลือก ALL, ERROR, WARNING, SUCCESS, NETWORK, LUA, INFO และ DEBUG เพื่อแสดงเฉพาะประเภทนั้น
 
 ## ตั้งค่า Configuration และ Sandbox
 
@@ -345,7 +345,7 @@ Dashboard แสดง **OFFLINE**, **STARTING**, **ONLINE**, **STOPPING** ห�
 
 ## Dev Workspace
 
-แท็บ **Dev** ค้นหาไฟล์ Lua ภายใน Server root และมี Editor ในตัว สามารถค้นหา สร้าง แก้ไข ตรวจ Reload เปลี่ยนชื่อ/ย้าย และส่งไฟล์ไป Recycle Bin ได้ ทุกครั้งที่เขียนทับ ระบบจะสร้าง Recovery copy แบบมีเวลาไว้ใน `backups\dev-lua` และจะไม่ยอม Save หากไฟล์ถูกโปรแกรมอื่นแก้หลังจากเปิดเข้ามา
+แท็บ **Dev Workspace** ค้นหา Source Lua จาก Server configuration, Custom mods, ตัวติดตั้ง Server และ Workshop โดยไม่รวมข้อมูล World ภายใน `data\Saves` สามารถค้นหา สร้าง เปิดไฟล์ขนาดไม่เกิน 128 MB แก้ไข ตรวจ Reload เปลี่ยนชื่อ/ย้าย และส่งไฟล์ไป Recycle Bin ได้ ทุกครั้งที่เขียนทับ ระบบจะสร้าง Recovery copy แบบมีเวลาไว้ใน `backups\dev-lua` และจะไม่ยอม Save หากไฟล์ถูกโปรแกรมอื่นแก้หลังจากเปิดเข้ามา
 
 ปุ่ม CHECK ตรวจ NUL/Encoding, Merge conflict, String/Comment ที่ปิดไม่ครบ และวงเล็บไม่ตรงกัน เป็นการตรวจโครงสร้างเบื้องต้นเท่านั้น การเปลี่ยน Server/Shared Lua ตามปกติต้อง Restart Server
 
@@ -404,7 +404,7 @@ Dashboard แสดง **OFFLINE**, **STARTING**, **ONLINE**, **STOPPING** ห�
 
 ---
 
-[Download Latest](https://github.com/natthawutGitZ/PJZB-Server-Manager/releases/latest) · [Project Zomboid Workshop](https://steamcommunity.com/app/108600/workshop/) · [Report an Issue](https://github.com/natthawutGitZ/PJZB-Server-Manager/issues)
+[Download Latest](https://github.com/CommunityDevGitZ/PJZB-Server-Manager/releases/latest) · [Project Zomboid Workshop](https://steamcommunity.com/app/108600/workshop/) · [Report an Issue](https://github.com/CommunityDevGitZ/PJZB-Server-Manager/issues)
 
 PJZB Server Manager is a community project and is not affiliated with The Indie Stone, Valve, or playit.gg.  
 PJZB Server Manager เป็นโครงการจากชุมชน ไม่ใช่ผลิตภัณฑ์อย่างเป็นทางการของ The Indie Stone, Valve หรือ playit.gg
