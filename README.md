@@ -26,6 +26,7 @@
 |---|---|---|
 | 🚀 First-Time Setup | Installs SteamCMD and the dedicated server automatically | ติดตั้ง SteamCMD และ Dedicated Server อัตโนมัติ |
 | 🧭 Existing Server | Reuse an existing PJZB root without resetting data | นำ Server เดิมมาใช้โดยไม่รีเซ็ตข้อมูล |
+| 📦 Co-op World Import | Automatically migrate a world created from the in-game Host menu | นำโลกจากเมนู Host มาใช้กับ Dedicated Server อัตโนมัติ |
 | 🌐 Connection | Dedicated, Port Forward, and playit.gg | Dedicated, Forward Port และ playit.gg |
 | 📊 Dashboard | Status, players, CPU, RAM, IP/Port, colored logs | สถานะ ผู้เล่น CPU, RAM, IP/Port และ Log แยกสี |
 | ⚙️ Settings | Friendly Configuration and Sandbox editors | แก้ Configuration และ Sandbox ได้ง่าย |
@@ -94,6 +95,10 @@ When no compatible server is found, the Launcher opens First-Time Setup before t
 4. Press **FIRST-TIME SETUP**.
 5. Choose Dedicated, Forward Port, or playit.gg.
 6. Follow the progress window until completion.
+
+Use **IMPORT CO-OP WORLD** to migrate a world created from the in-game Host menu. The Launcher scans `%UserProfile%\Zomboid`, lists matching worlds, installs the dedicated-server runtime, creates a recovery ZIP, and copies the selected world, player database, Configuration, Sandbox, Mods, and Workshop settings into a PJZB profile. The original Co-op data is never modified.
+
+Use the gear button in the First-Time Setup header to open **Launcher Settings** and check for Launcher updates before a server has been installed.
 
 The Launcher downloads SteamCMD, installs Project Zomboid Dedicated Server, creates folders/configuration, and prepares Admin/RCON credentials. Interrupted SteamCMD downloads are retained and retried up to four times. Configuration is generated automatically and remains editable later.
 
@@ -267,6 +272,10 @@ Close duplicate `PJZB Server Manager.exe` processes in Task Manager and launch t
 4. กด **FIRST-TIME SETUP**
 5. เลือก Dedicated, Forward Port หรือ playit.gg
 6. รอหน้าต่างสถานะจนเสร็จ
+
+ใช้ **IMPORT CO-OP WORLD** เพื่อนำโลกที่สร้างจากเมนู Host มาใช้กับ Dedicated Server โดย Launcher จะค้นหาจาก `%UserProfile%\Zomboid` แสดงรายชื่อโลก ติดตั้ง Dedicated Server สร้าง Recovery ZIP และคัดลอกโลก ฐานข้อมูลผู้เล่น Configuration, Sandbox, Mods และ Workshop มาเป็นโปรไฟล์ PJZB โดยไม่แก้ไขข้อมูล Co-op ต้นฉบับ
+
+ปุ่มรูปเฟืองบนหน้า First-Time Setup สามารถเปิด **Launcher Settings** และตรวจสอบ Launcher Update ได้ แม้ยังไม่ได้ติดตั้ง Server
 
 Launcher จะดาวน์โหลด SteamCMD, ติดตั้ง Dedicated Server, สร้างโฟลเดอร์/Configuration และเตรียม Admin/RCON password อัตโนมัติ หากเน็ตสะดุด ระบบเก็บข้อมูลเดิมและลองใหม่สูงสุด 4 ครั้ง หลัง Setup สามารถกลับมาแก้ Configuration ได้
 
