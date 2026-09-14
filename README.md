@@ -7,7 +7,7 @@
 
 [![Latest Release](https://img.shields.io/github/v/release/CommunityDevGitZ/PJZB-Server-Manager?style=for-the-badge&color=7c3aed)](https://github.com/CommunityDevGitZ/PJZB-Server-Manager/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/CommunityDevGitZ/PJZB-Server-Manager/total?style=for-the-badge&color=16a34a)](https://github.com/CommunityDevGitZ/PJZB-Server-Manager/releases)
-👀 [![Views](https://hits.sh/github.com/CommunityDevGitZ/PJZB-Server-Manager.svg?style=for-the-badge&label=Views&color=7c3aed&labelColor=111827)](https://hits.sh/github.com/CommunityDevGitZ/PJZB-Server-Manager/)
+[![Views](https://hits.sh/github.com/CommunityDevGitZ/PJZB-Server-Manager.svg?style=for-the-badge&label=Views&color=7c3aed&labelColor=111827)](https://hits.sh/github.com/CommunityDevGitZ/PJZB-Server-Manager/)
 ![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0284c7?style=for-the-badge&logo=windows)
 ![Project Zomboid](https://img.shields.io/badge/Project%20Zomboid-Build%2042-dc2626?style=for-the-badge)
 
