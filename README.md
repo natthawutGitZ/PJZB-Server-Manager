@@ -33,7 +33,7 @@
 | 👥 Players | RCON, access levels, kick, ban, and broadcast | RCON, ตั้งสิทธิ์, Kick, Ban และ Broadcast |
 | 💾 Backups | Create, restore, and safely delete backups | สร้าง กู้คืน และลบ Backup อย่างปลอดภัย |
 | 🧑‍💻 Dev Workspace | Create, edit, validate, move, back up, and delete server Lua files | สร้าง แก้ ตรวจ ย้าย สำรอง และลบไฟล์ Lua ใน Server |
-| 🔔 System Tray | Keep the Launcher available after closing or minimizing | ซ่อน Launcher ไว้ที่มุมขวาล่างเมื่อปิดหรือย่อหน้าต่าง |
+| 🔄 Automatic Mod Updates | Schedule automatic mod update checks at a custom interval | ตั้งเวลาตรวจสอบและอัปเดต Mod อัตโนมัติได้ตามต้องการ |
 
 ## Setup modes / รูปแบบการติดตั้ง
 
